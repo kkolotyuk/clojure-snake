@@ -25,4 +25,16 @@
 
   (testing "Lose condition"
     (is (lose? {:body '([1 1] [1 2] [2 2] [2 1] [1 1])}))
-    (is (not (lose? {:body '([0 1])})))))
+    (is (not (lose? {:body '([0 1])}))))
+
+  (testing "Eats apple?"
+    (let [snake (create-snake)
+          eating-apple {:location (-> snake :body first)}
+          not-eating-apple {:location (->> snake :body first (mapv inc))}]
+      (is (eats? snake eating-apple))
+      (is (not (eats? snake not-eating-apple)))))
+
+  (testing "Turn"
+    (let [snake (create-snake)
+          newdir [0 -1]]
+      (is (:dir (turn snake newdir) newdir)))))

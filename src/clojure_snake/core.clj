@@ -43,6 +43,12 @@
 
 (def lose? head-overlaps-body?)
 
+(defn eats? [{[head] :body} {apple :location}]
+  (= head apple))
+
+(defn turn [snake newdir]
+  (assoc snake :dir newdir))
+
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
