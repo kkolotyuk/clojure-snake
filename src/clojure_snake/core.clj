@@ -35,6 +35,13 @@
                              body
                              (butlast body)))))
 
+(defn win? [{body :body}]
+  (>= (count body) win-length))
+
+(defn- head-overlaps-body? [{[head & tail] :body}]
+  (contains? (set tail) head))
+
+(def lose? head-overlaps-body?)
 
 (defn -main
   "I don't do a whole lot ... yet."

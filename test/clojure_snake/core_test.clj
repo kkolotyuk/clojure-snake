@@ -17,4 +17,12 @@
   (testing "Move snake with grow"
     (let [snake (create-snake)
           moved-snake (assoc snake :body '([2 1] [1 1]))]
-      (is (= (move snake :grow) moved-snake)))))
+      (is (= (move snake :grow) moved-snake))))
+
+  (testing "Win condition"
+    (is (win? {:body '([0 1] [0 2] [0 3] [0 4] [0 5])}))
+    (is (not (win? {:body '([0 1])}))))
+
+  (testing "Lose condition"
+    (is (lose? {:body '([1 1] [1 2] [2 2] [2 1] [1 1])}))
+    (is (not (lose? {:body '([0 1])})))))
