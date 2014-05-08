@@ -2,9 +2,7 @@
   (:import (java.awt Color Dimension)
            (javax.swing JPanel JFrame Timer JOptionPane)
            (java.awt.event ActionListener KeyListener KeyEvent))
-  (:require [clojure.contrib import-static])
   (:gen-class))
-;; (import-static java.awt.event.KeyEvent VK_LEFT VK_RIGHT VK_UP VK_DOWN)
 
 (def width 75)
 (def height 50)
