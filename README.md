@@ -1,36 +1,12 @@
 # clojure-snake
 
-FIXME: description
+Snake game
 
-## Installation
+## Run
 
-Download from http://example.com/FIXME.
+    $ java -jar target/clojure-snake-0.1.0-standalone.jar
 
-## Usage
-
-FIXME: explanation
-
-    $ java -jar clojure-snake-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2014 FIXME
+Copyright © 2014 kkolotyuk
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
