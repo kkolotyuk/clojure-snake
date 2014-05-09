@@ -1,0 +1,2 @@
+#_"This file overrides some properties of the game special for tests"
+{:win-length 5}

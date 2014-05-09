@@ -1,9 +1,10 @@
 (ns clojure-snake.game
-    (:import (java.awt Color)))
+    (:import (java.awt Color))
+    (:require [carica.core :refer [config]]))
 
-(def win-length 5)
-(def width 75)
-(def height 50)
+(def win-length (config :win-length))
+(def width (config :width))
+(def height (config :height))
 
 (defn add-points [& pts]
   "Adds points together. You can use add-points to calculate

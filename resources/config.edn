@@ -1,0 +1,5 @@
+{:time-step 75 #_"In millis"
+ :win-length 10
+ :width 75 #_"Playing field width in points"
+ :height 50 #_"Playing field height in points"
+ :point-size 10 #_"Point size in pixels"}

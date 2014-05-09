@@ -1,4 +1,4 @@
-(ns clojure-snake.core-test
+(ns clojure-snake.game-test
   (:require [clojure.test :refer :all]
             [clojure-snake.game :refer :all]))
 

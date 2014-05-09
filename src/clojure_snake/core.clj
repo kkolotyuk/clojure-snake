@@ -2,12 +2,13 @@
   (:import (java.awt Color Dimension)
            (javax.swing JPanel JFrame Timer JOptionPane)
            (java.awt.event ActionListener KeyListener KeyEvent))
-  (:require [clojure-snake.game :refer :all])
+  (:require [clojure-snake.game :refer :all]
+            [carica.core :refer [config]])
   (:gen-class))
 
 
-(def point-size 10)
-(def turn-millis 75)
+(def point-size (config :point-size))
+(def turn-millis (config :time-step))
 
 (def dirs {KeyEvent/VK_LEFT  [-1 0]
            KeyEvent/VK_RIGHT [1 0]
@@ -81,6 +82,6 @@
     [snake, apple, timer]))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Run game."
   [& args]
   (game))
