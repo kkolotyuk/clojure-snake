@@ -4,7 +4,7 @@ Snake game
 
 ## Run
 
-    $ java -jar target/clojure-snake-0.1.0-standalone.jar
+    $ java -jar full-path-to-project/target/clojure-snake-0.1.0-standalone.jar
 
 Copyright © 2014 kkolotyuk
 
